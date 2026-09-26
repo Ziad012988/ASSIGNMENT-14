@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { MdOutlineCamera } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -79,9 +79,12 @@ export default function Navbar() {
             >
               <IoSearch />
             </div>
-            <button className="rounded-full pr-7 pl-7 bg-linear-to-r from-[#f66d14] to-[#ed5d0e] text-white font-bold text-[14px] hover:-translate-y-0.5 transition-all duration-400">
+            <Link
+              to="/blog"
+              className="rounded-full p-3.5 pr-7 pl-7 bg-linear-to-r from-[#f66d14] to-[#ed5d0e] text-white font-bold text-[14px] hover:-translate-y-0.5 transition-all duration-400"
+            >
               ابدأ القراءة
-            </button>
+            </Link>
           </div>
 
           <button
